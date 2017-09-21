@@ -1,0 +1,7 @@
+#!/bin/bash
+set -x
+
+source /etc/rtwsrc
+
+echo 'Removing conflicting jetty dependencies provided by the framework'
+/bin/rm -fv /usr/local/rtws/transport/lib/jetty*8.1*.jar /usr/local/rtws/transport/lib/servlet-api-2.3.jar /usr/local/rtws/transport/lib/javax.servlet-3.0.0.v201112011016.jar
